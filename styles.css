@@ -1,0 +1,75 @@
+:root {
+  background: #d5d5bc;
+  /* text-align: center; */
+}
+.colorPicker span {
+  display: inline-block;
+  height: 1.5em;
+  width: 4em;
+  outline: none;
+  border: none;
+}
+.colorPicker .input::before {
+  content: '#'
+}
+.colorPicker .display, .colorPicker .random {
+  width: 1.5em;
+  color: transparent;
+  border-left: 1px solid black;
+}
+.colorPicker .random {
+  background-image: url('random.png');
+  background-size: 1em;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.colorPicker .input {
+  transform: translateY(4px);
+  padding-left: 2.5px;
+  padding-right: -2.5px;
+}
+.colorPicker {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+  width: fit-content;
+  margin: auto;
+  padding: 0;
+}
+.palletteContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5em;
+}
+.pallette {
+  border: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 7.5em;
+  text-align: center;
+  border-radius: 20px;
+  user-select: none;
+}
+.palletteColor {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-size:13px;
+  line-height: 50px;
+  vertical-align: middle;
+  border-radius: 10px;
+  transition: 0.1s all;
+  cursor: default;
+}
+.pallette h1 {
+  font-size: 16px;
+  height: 2.5em;
+}
+.palletteColor:active {
+  transform: scale(0.75)
+}
